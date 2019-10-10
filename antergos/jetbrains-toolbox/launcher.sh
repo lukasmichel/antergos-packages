@@ -48,7 +48,7 @@ copy_lastest_installed_version_file() {
 
 
 run_toolbox() {
-	exec "${toolbox_system_dir}/jetbrains-toolbox" --disable-seccomp-filter-sandbox "$@"
+	exec "${toolbox_system_dir}/jetbrains-toolbox" "$@"
 }
 
 

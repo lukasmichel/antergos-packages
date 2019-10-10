@@ -1,9 +1,9 @@
 # Maintainer: Antergos Developers <dev@antergos.com>
 
 pkgname=jetbrains-toolbox
-pkgver=1.14.5179
-pkgrel=1
-epoch=2
+pkgver=1.15.5796
+pkgrel=2
+epoch=1
 pkgdesc="One-stop access to all your coding tools from JetBrains."
 url='http://www.jetbrains.com/toolbox/'
 arch=('any')
@@ -21,12 +21,11 @@ source=("https://download.jetbrains.com/toolbox/${pkgname}-${pkgver}.tar.gz"
 		'.settings.json'
 		'toolbox.svg'
 		'launcher.sh')
-sha256sums=($(wget -q "${source}.sha256" && cat "${pkgname}-${pkgver}.tar.gz.sha256" | cut -f1 -d" ")
-			'ec837e9d12f010957cf274bb846bc758619d041fb07dfde716ef6f4a4b5dd0a7'
-			'1d583206859c21ba3d8898f0dffbaf3f6ae88c0e4ebeeb4868cc7e71aaf3895a'
-			'9e3784dc0bc10c0d7db7c01fa8874b4048ecb1d21fa2a82d4ff17c53cfacf70c'
-			'28b57e415789d704f99bb505b83bfbb90430b37c53e37d0e20e527c9f510c04f'
-)
+sha256sums=('e86a8d2f2b03b1869208fdbb2e94d140efad4304f4ecc68f18ff3ffcfb1f2799'
+            'ec837e9d12f010957cf274bb846bc758619d041fb07dfde716ef6f4a4b5dd0a7'
+            '1d583206859c21ba3d8898f0dffbaf3f6ae88c0e4ebeeb4868cc7e71aaf3895a'
+            '9e3784dc0bc10c0d7db7c01fa8874b4048ecb1d21fa2a82d4ff17c53cfacf70c'
+            'a5b54e06022195bf90b70dedf91ff4817ed42b1cbcf1e3a9d85650721b27e7af')
 
 # BEGIN ANTBS METADATA
 _autosums='True'
